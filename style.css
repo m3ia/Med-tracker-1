@@ -1,0 +1,44 @@
+html, body {
+	background-color: lavender;
+	font-family: 'Architects Daughter', cursive;
+}
+#container {
+	margin:100px;
+	width: 500px;
+	border: 1px black solid;
+	margin-left: auto;
+	margin-right:auto;
+	padding: 20px;
+	box-shadow: 10px 10px 2px 1px rgba(0,0,255,.2);
+}
+h1 {
+	padding-left: 35px;
+	margin:0px;
+}
+#input {
+	padding: 7px;
+	padding-right: 35px;
+	margin-left: 35px;
+}
+
+#list {
+	list-style: none;
+	margin-right:40px;
+}
+.meds {
+	border: 1px solid black;
+	padding: 7px;
+}
+.meds:hover {
+	background-color: #ffffcc;
+}
+.cross {
+	text-decoration: line-through;
+	color: grey;
+	font-style:italic;
+
+}
+#plus {
+	float: right;
+	margin-right: 30px;	
+}
