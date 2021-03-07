@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="utf-8" />
-  <title>Med Tracker App</title> 
-  <link rel="stylesheet" href="design.css" />
-  <link rel="shortcut icon" href="./capsules.png" />
-  <script defer src="model.js"></script>
-  <script defer src="main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Pill Pal</title>
+    <!-- <link rel="stylesheet" href="design.css" /> -->
+    <link rel="shortcut icon" href="./capsules.png" />
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin:0;
+        background-color: lavender;
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+      }
+      #capsules {
+        width: 30%;
+        margin-top:20px;
+      }
+      #title {
+        margin:0;
+        margin-top:20px;
+        font-size:80px;
+        font-weight: bold;
+      }
+      h2 {
+        margin-top:0;
+      }
+      h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      footer{ 
+        margin-top: 300px;
+      }
+  </style>
+  </head>
 
-</head>
+  <body>
+    <header>
+      <p id="title"> Pill Pal </p>
+      <h2>Keep track of every medicine you take!</h2>
+      <img id="capsules" src="./capsules.png" alt="Capsules Logo" />
+    </header>
 
-<body>
-  <header>
-    <img src="./capsules.png" alt="Capsules Logo" width=200em />
-    <h1>Med Tracker App</h1>
-  </header>
+    <main>
+      <div>
+        <section class="login">
+          <fieldset>
+            <form id="" action="secondpg.html">
+            <h3>Enter your phone number </h3>
+            <input
+                  type="text"
+                  id="add-phone"
+                  placeholder="408-112-1023"
+                /> <br><br>
+            <input type="submit" value="Submit">
+            </form>
+          </fieldset>
+          <fieldset>
+            <button type="button" id="joke" class="btn btn-warning mt-5">Give me a joke!</button>
+            <p id="display-joke"> </p>
+          </fieldset>  
+        </section>
 
-  <main>
-    <div class="container">
-      <section class="med-management">
-        <h2>Medication Management</h2>
-        <div>
-          <h3>Medications I'm Currently Taking</h3>
-          <ul id="med-list">
-            <li></li>
-          </ul>
-
+      </div>
           <h3>Add A New Medication</h3>
           <form id="add-med" >
             <fieldset>
@@ -60,44 +98,25 @@
               <br><br>
               <input type="submit" value="Submit">
           </form>
-
-          </fieldset>
-
+          <section class="med-management">
+            <h2>Medication Management</h2>
+            <div>
+              <h3>Medications I'm Currently Taking</h3>
+              <ul id="med-list">
+                <li></li>
+              </ul>
+    <footer>
+      <div>
+        Star Calendar favicon made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          >Freepik</a>
+        Find your own on
+        <a href="https://www.flaticon.com/" title="Flaticon">FlatIcon.com</a>
           </form>
         </div>
 
-      </section>
-
-      <section class="record-meds">
-        <h2>Record The Medication You're About To Take</h2>
-        <div>
-          <form id="record-meds" action="secondpg.html">
-            <input type="submit" value="Record Medication" />
-          </form>
-        </div>
-
-        <ul id="taken-meds-list">
-
-          <li>...</li>
-        </ul>
-
-  </main>
-
-  <footer>
-    <div>
-      Capsules favicon made by
-      <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
-      Find your own on
-      <a href="https://www.flaticon.com/" title="Flaticon">FlatIcon.com</a>
-
-    </div>
-    <div>
-    </div>
-  </footer>
-
-  <!-- jquery library -->
-  <script src="http://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-</body>
+  <script defer src="model.js"></script>\
+  <script defer src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </html>

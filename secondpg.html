@@ -19,10 +19,46 @@
 		<h1>Medications Tracker
 			<i id="plus" class="fas fa-plus"></i>
 		</h1>
-		<form id="form">
-			<input id="input" type="text" placeholder="Blank">
+		<form id="add-med">
+			<!-- <input id="input" type="text" placeholder="Blank"> -->
+			<fieldset>
+				<h3>Add A New Medication</h3>
+                <label>Name</label>
+                <input
+                  type="text"
+                  id="add-med-name"
+                  placeholder="Tylenol"
+                /><br>
+                <label>What time date will you start taking it? </label>
+                <input type="date" id="add-med-date"
+data-date-format="M/d/yyyy" min="2021-01-01" placeholder="" title="mm/dd/yyyy" type="text"><br>
+                <label>How often should you take it?</label>
+               
+                  <select 
+                  id="add-med-freq"
+                  name="category">
+                    <option value="Once a day">Once a day</option>
+                    <option value="Every hour">Every hour</option>
+                    <option value="Every 2 hours">Every 2 hours</option>
+                    <option value="Every 3 hours">Every 3 hours</option>
+                    <option value="Every 4 hours">Every 4 hours</option>
+                    <option value="Every 5 hours">Every 5 hours</option>
+                    <option value="Every 6 hours">Every 6 hours</option>
+                    <option value="Every 7 hours">Every 7 hours</option>
+                    <option value="Every 8 hours">Every 8 hours</option>
+                    <option value="Every 9 hours">Every 9 hours</option>
+                    <option value="Every 10 hours">Every 10 hours</option>
+                    <option value="Every 11 hours">Every 11 hours</option>
+                    <option value="Every 12 hours">Every 12 hours</option>
+                  </select>
+                <div>
+                	<br>
+                <input id="submit-med" type="submit" value="Submit">
+            	</div>
+            </fieldset>
 		</form>
 		<ul id="list">
+			<!--  
 			<li class="meds">
 				<i class="far fa-square"></i> Tylenol
 			</li>
@@ -33,7 +69,7 @@
 			<li class="meds">
 				<i class="far fa-square"></i>
 				Metformin
-			</li>
+			</li> -->
 		</ul>
 	</div>
 
