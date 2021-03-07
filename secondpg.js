@@ -9,6 +9,6 @@ $("#list").on("click", ".fa-square", function(event) {
 });
 
 $("#plus").on("click", function() {
-    $("#form").slideToggle();
+    $("#add-med").slideToggle();
 });
 
