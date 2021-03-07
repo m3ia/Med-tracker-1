@@ -31,10 +31,11 @@
                 <input type="date" id="add-med-date"
 data-date-format="M/d/yyyy" min="2021-01-01" placeholder="" title="mm/dd/yyyy" type="text"><br>
                 <label>How often should you take it?</label>
-                <div  style="width:200px;">
+               
                   <select 
                   id="add-med-freq"
                   name="category">
+                    <option value="Once a day">Once a day</option>
                     <option value="Every hour">Every hour</option>
                     <option value="Every 2 hours">Every 2 hours</option>
                     <option value="Every 3 hours">Every 3 hours</option>
@@ -48,10 +49,14 @@ data-date-format="M/d/yyyy" min="2021-01-01" placeholder="" title="mm/dd/yyyy" t
                     <option value="Every 11 hours">Every 11 hours</option>
                     <option value="Every 12 hours">Every 12 hours</option>
                   </select>
-                </div>
+                <div>
+                	<br>
+                <input id="submit-med" type="submit" value="Submit">
+            	</div>
             </fieldset>
 		</form>
 		<ul id="list">
+			<!--  
 			<li class="meds">
 				<i class="far fa-square"></i> Tylenol
 			</li>
@@ -62,7 +67,7 @@ data-date-format="M/d/yyyy" min="2021-01-01" placeholder="" title="mm/dd/yyyy" t
 			<li class="meds">
 				<i class="far fa-square"></i>
 				Metformin
-			</li>
+			</li> -->
 		</ul>
 	</div>
 

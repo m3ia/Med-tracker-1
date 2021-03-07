@@ -1,4 +1,4 @@
-console.log('lkj;lkjljk');
+ 
  document.addEventListener("DOMContentLoaded", () => {
   const app = new Medication();
   // Must call this function after add any medications.
@@ -26,3 +26,24 @@ console.log('lkj;lkjljk');
   });
 
 });
+document.querySelector("#joke").onclick = function() {
+  // jQuery's AJAX
+  $.ajax({
+    method: "GET",
+    // the endpoint
+    url: "https://icanhazdadjoke.com/",
+    // the parameters to send to itunes API
+    })
+    .done(function(results) {
+      // when a response is recieved this code runs
+      console.log(results);
+      displayResults(results);
+    })
+    .fail(function() {
+      // when an error is received, this function runs
+      console.log("ERROR");
+    });
+}
+function displayResults(results) {
+  $("#display-joke").text(results.joke);
+}

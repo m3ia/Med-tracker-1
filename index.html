@@ -2,13 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Pill Pal</title>
-    <link rel="stylesheet" href="design.css" />
+    <!-- <link rel="stylesheet" href="design.css" /> -->
     <link rel="shortcut icon" href="./capsules.png" />
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
+    <style>
+      body {
+        margin:0;
+        background-color: lavender;
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+      }
+      #capsules {
+        width: 30%;
+        margin-top:20px;
+      }
+      #title {
+        margin:0;
+        margin-top:20px;
+        font-size:80px;
+        font-weight: bold;
+      }
+      h2 {
+        margin-top:0;
+      }
+      h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      footer{ 
+        margin-top: 300px;
+      }
+  </style>
   </head>
 
   <body>
@@ -19,22 +50,26 @@
     </header>
 
     <main>
-      <div class="medication-tracking">
+      <div>
         <section class="med-management">
-          <div>
-
-            <h3>Enter your phone number </h3>
+          <fieldset>
             <form id="" action="secondpg.html">
-              <fieldset>
-                    <input type="submit" value="Submit">
-                  
-
-              </fieldset>
-
+            <h3>Enter your phone number </h3>
+            <input
+                  type="text"
+                  id="add-phone"
+                  placeholder="408-112-1023"
+                /> <br><br>
+            <input type="submit" value="Submit">
             </form>
-          </div>
+          </fieldset>
+          <fieldset>
+            <button type="button" id="joke" class="btn btn-warning mt-5">Give me a joke!</button>
+            <p id="display-joke"> </p>
+          </fieldset>  
+        </section>
 
-          <div>
+      </div>
 
     </main>
 
@@ -42,8 +77,7 @@
       <div>
         Star Calendar favicon made by
         <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-          >Freepik</a
-        >
+          >Freepik</a>
         Find your own on
         <a href="https://www.flaticon.com/" title="Flaticon">FlatIcon.com</a>
 
@@ -52,7 +86,7 @@
       </div>
     </footer>
 
-  <script defer src="models.js"></script>\
+  <script defer src="model.js"></script>\
   <script defer src="main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
