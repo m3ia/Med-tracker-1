@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Med Tracker App</title>
+    <title>Pill Pal</title>
     <link rel="stylesheet" href="design.css" />
     <link rel="shortcut icon" href="./capsules.png" />
 
@@ -13,54 +13,21 @@
 
   <body>
     <header>
-      <img src="./capsules.png" alt="Capsules Logo" />
-      <h1>Med Tracker App</h1>
+      <p id="title"> Pill Pal </p>
+      <h2>Keep track of every medicine you take!</h2>
+      <img id="capsules" src="./capsules.png" alt="Capsules Logo" />
     </header>
 
     <main>
       <div class="medication-tracking">
         <section class="med-management">
-          <h2>Medication Management</h2>
           <div>
-            <h3>Medications I'm Currently Taking</h3>
-            <ul id="med-list">
-              <li>...</li>
-            </ul>
 
-            <h3>Add A New Medication</h3>
+            <h3>Enter your phone number </h3>
             <form id="" action="secondpg.html">
               <fieldset>
-                <label>Name</label>
-                <input
-                  type="text"
-                  id="add-med-name"
-                  placeholder="Tylenol"
-                /><br>
-                <label>What time date will you start taking it? </label>
-                <input type="date" id="add-med-date"
-data-date-format="M/d/yyyy" min="2021-01-01" placeholder="" title="mm/dd/yyyy" type="text"><br>
-                <label>How often should you take it?</label>
-                <div style="width:200px;">
-                  <select 
-                  id="add-med-freq"
-                  name="category">
-                    <option value="Every hour">Every hour</option>
-                    <option value="Every 2 hours">Every 2 hours</option>
-                    <option value="Every 3 hours">Every 3 hours</option>
-                    <option value="Every 4 hours">Every 4 hours</option>
-                    <option value="Every 5 hours">Every 5 hours</option>
-                    <option value="Every 6 hours">Every 6 hours</option>
-                    <option value="Every 7 hours">Every 7 hours</option>
-                    <option value="Every 8 hours">Every 8 hours</option>
-                    <option value="Every 9 hours">Every 9 hours</option>
-                    <option value="Every 10 hours">Every 10 hours</option>
-                    <option value="Every 11 hours">Every 11 hours</option>
-                    <option value="Every 12 hours">Every 12 hours</option>
-                  </select>
-                </div>
-                    <br><br>
                     <input type="submit" value="Submit">
-                  </form>
+                  
 
               </fieldset>
 
@@ -68,24 +35,6 @@ data-date-format="M/d/yyyy" min="2021-01-01" placeholder="" title="mm/dd/yyyy" t
           </div>
 
           <div>
-            <h3>Delete Medication</h3>
-            <form id="delete-med" action="#">
-              <fieldset>
-                <label>Event ID</label>
-                <input type="number" min="1" id="delete-med-id" />
-              </fieldset>
-              <input type="submit" />
-            </form>
-          </div>
-        </section>
-
-        <section class="record-meds">
-          <h2>Record The Medication You're About To Take</h2>
-
-          <ul id="taken-meds-list"> // add feature for checking meds 
-            
-            <li>...</li>
-          </ul>
 
     </main>
 
